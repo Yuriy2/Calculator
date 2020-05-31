@@ -10,10 +10,22 @@ namespace DZ_Calculator
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to calculator !!!");
+            Console.WriteLine("Enter Value One: ");
+            int.TryParse(Console.ReadLine(), out int val1);
+            Console.WriteLine("Enter Value Two: ");
+            int.TryParse(Console.ReadLine(), out int val2);
+
+            Console.WriteLine($"Sum: {Plus(val1, val2)}");
 
 
 
             Console.ReadLine();
         }
+        static double Plus(int a, int b)
+        {
+            return a + b;
+        }
+
     }
 }
