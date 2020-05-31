@@ -20,6 +20,12 @@ namespace DZ_Calculator
             Console.WriteLine($"Difference: {Difference(val1, val2)}");
             Console.WriteLine($"Multiplication: {Multiplication(val1, val2)}");
 
+
+            if (Division(val1, val2) == 0)
+                Console.WriteLine("Error: division by 0");
+            else 
+                Console.WriteLine($"Division: {Division(val1, val2)}");
+
             Console.ReadLine();
         }
         static double Plus(int a, int b)
@@ -34,6 +40,13 @@ namespace DZ_Calculator
         {
             return a * b;
         }
-
+        static double Division(int a, int b)
+        {
+            if (b != 0)
+                return (double)a / b;
+            else
+                return 0;
+            
+        }
     }
 }
