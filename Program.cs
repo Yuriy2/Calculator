@@ -18,7 +18,7 @@ namespace DZ_Calculator
 
             Console.WriteLine($"Sum: {Plus(val1, val2)}");
             Console.WriteLine($"Difference: {Difference(val1, val2)}");
-
+            Console.WriteLine($"Multiplication: {Multiplication(val1, val2)}");
 
             Console.ReadLine();
         }
@@ -30,7 +30,10 @@ namespace DZ_Calculator
         {
             return a - b;
         }
-
+        static double Multiplication(int a, int b)
+        {
+            return a * b;
+        }
 
     }
 }
