@@ -17,7 +17,7 @@ namespace DZ_Calculator
             int.TryParse(Console.ReadLine(), out int val2);
 
             Console.WriteLine($"Sum: {Plus(val1, val2)}");
-
+            Console.WriteLine($"Difference: {Difference(val1, val2)}");
 
 
             Console.ReadLine();
@@ -26,6 +26,11 @@ namespace DZ_Calculator
         {
             return a + b;
         }
+        static double Difference(int a, int b)
+        {
+            return a - b;
+        }
+
 
     }
 }
